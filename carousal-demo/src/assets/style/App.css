@@ -1,0 +1,18 @@
+
+.filter-tabs{
+  display: flex;
+  margin: 10px 0;
+  gap: 5px;
+  justify-content: center;
+}
+.img-id{
+  position: absolute;
+  left: 15px;
+  top: 10px;
+}
+.grid-item{
+  cursor: pointer;
+}
+.grid-item img:hover{
+  box-shadow: 0px 0px 10px 2px rgb(0,0,0,.5) ;
+}
