@@ -4,14 +4,14 @@ import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Carousel  from './carousal';
-import Controler from '../controllers/constroler';
+import {GetImagesController} from '../controllers/controllers';
 import { Button } from 'react-bootstrap';
 import '../assets/style/modalStyle.css';
 
 
 function ImageGrid() {
 
-   const {imageData, filterByTab} = Controler();
+   const {imageData, filterByTab} = GetImagesController();
    const [openModal, setOpenModal] = useState(false);
    const [selectedIndex,setSelectedIndex] = useState(0);
    const [selectedTab,setSelectedTab] = useState('all');

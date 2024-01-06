@@ -1,11 +1,10 @@
 import './assets/style/App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ImageGrid from './components/imageGrid'
-import Controler from './controllers/constroler';
+import { GetImagesController } from './controllers/controllers';
 
 function App() { 
-  const {apiError} = Controler();
-  console.log('apiError',apiError);
+  const {apiError} = GetImagesController();
 
   return (
     <> 

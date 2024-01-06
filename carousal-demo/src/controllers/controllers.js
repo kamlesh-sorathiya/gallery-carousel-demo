@@ -2,7 +2,7 @@
 import { useState,useEffect } from 'react'
 // import ImageGallery from "react-image-gallery";
 
-const Controler = () =>{
+export const GetImagesController = () =>{
   
   const [apiData,setApiData] = useState([]);
   const [imageData,setImageData] = useState([]);
@@ -40,5 +40,3 @@ const Controler = () =>{
     imageData,filterByTab,apiError
   }
 }
-
-export default Controler
